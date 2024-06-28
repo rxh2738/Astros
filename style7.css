@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background:
+    url(https://images.unsplash.com/photo-1570284613060-766c33850e00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+header{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+button {   
+       background-color: black;   
+       width: 100%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }  
+
+ form {   
+        border: 3px solid #f1f1f1;   
+    }  
+
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid darkblue;   
+        box-sizing: border-box;   
+    }  
+
+label{
+  color: white;
+}
+
+h1 {
+   color: white;
+}
+ button:hover {   
+        opacity: 0.7;   
+    }   
+
+
+  .cancelbtn {               bh≥¬¬¬p
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+
+ .container {   
+        padding: 25px;   
+        background:  url(https://images.unsplash.com/photo-1570284613060-766c33850e00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);;  
+    color: whitesmoke;
+    }  
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: #ffc107;
+}

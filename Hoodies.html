@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ASTROS</title>
+  <link href="stylef.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script type="text/javascript" src="https://cdn-icons-png.flaticon.com/512/263/263142.png"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <style>
+    h3 {
+      color: white;
+      text-align: center;
+    }
+
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      -webkit-animation-name: fadeIn;
+      /* Fade in the background */
+      -webkit-animation-duration: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: fixed;
+      bottom: 0;
+      background-color: #fefefe;
+      width: 100%;
+      -webkit-animation-name: slideIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: slideIn;
+      animation-duration: 0.4s
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      background-color: #5cb85c;
+      color: white;
+    }
+
+    .modal-body {
+      padding: 2px 16px;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes slideIn {
+      from {
+        bottom: -300px;
+        opacity: 0
+      }
+
+      to {
+        bottom: 0;
+        opacity: 1
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        bottom: -300px;
+        opacity: 0
+      }
+
+      to {
+        bottom: 0;
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .cart {
+      background-color: black;
+      color: White;
+      height: 30px;
+      width: 200px;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="financial.html">Financial Plans</a>
+    <a href="training.html">Training</a>
+    <a href="vehicle.html">Vehicles</a>
+    <a href="launch.html">Launch</a>
+  </nav>
+
+  <div class="titlepage">
+    <h1>Shop Now</h1>
+    <p> Click on the first image for the details(the detials apply for all)</p>
+  </div>
+  <a class="cart" href="PaymentGateWay.html">Go to Cart <i class="fa fa-shopping-cart"></i></a>
+
+  <div class="row">
+
+    <div class="col2">
+      <img
+        src="https://images.unsplash.com/photo-1611768309028-04a36c8a4cec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2912&q=80"
+        id="myBtn1" width="200px;" />
+      <h3>White Colored Hoodie</h3>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>Details</span><span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col2">
+                
+              </div>
+              <div class="col2" style="text-align:left;">
+                <h4>Scott International Rich Cotton</h4>
+                <p>
+                <h4>Material Composition:</h4>
+                </p>
+                <p>
+                <h4>PRODUCT DETAILS</h4>
+                </p>
+                <p><b>Material Composition:</b> Cotton</p>
+                <p><b>Style:</b> Regular</p>
+                <p><b>Pattern:</b> Self-Design</p>
+                <p><b>Country of Origin:</b> USA</p>
+
+                <p><b>$50</b> Amount</p>
+                <input type="text" class="count1" value="100" hidden></input>
+                <input type="text" class="count2" onchange="calculate()" value="1" />
+                </p>
+                <a class="cart" href="PaymentGateWay.html">Go to Cart <i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col2">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1624026652918-0eab17e183cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
+        id="myBtn2" width="200px;" />
+      <h3>Red Colored Crewneck</h3>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>Hoodies</span><span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col2">
+                <img
+                  src="https://images.unsplash.com/photo-1624026652918-0eab17e183cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
+                  width="300px" height="300px">
+              </div>
+              <div class="col2" style="text-align:left;">
+                <h4>Scott International Rich Cotton Crewneck</h4>
+                <p>
+                <h4>Material Composition:</h4>
+                </p>
+                <p>
+                <h4>PRODUCT DETAILS</h4>
+                </p>
+                <p><b>Material Composition:</b> Cotton</p>
+                <p><b>Style:</b> Regular</p>
+                <p><b>Neck Style:</b> Hooded Neck</p>
+                <p><b>Pattern:</b> Self-Design</p>
+                <p><b>Country of Origin:</b> USA</p>
+
+                <p><b>$50</b> Amount</p>
+                <input type="text" class="count1" value="100" hidden></input>
+                <input type="text" class="count2" onchange="calculate()" value="1" />
+                </p>
+                <a class="cart" href="PaymentGateWay.html">Go to Cart <i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="col2">
+      <img
+        src="https://images.unsplash.com/photo-1589413364939-9f9fedb13e20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        id="myBtn3" width="200px;" />
+      <h3>Black Color Sweatpant</h3>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>Hoodies</span><span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col2">
+                <img
+                  src="https://images.unsplash.com/photo-1589413364939-9f9fedb13e20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  width="300px" height="300px">
+              </div>
+              <div class="col2" style="text-align:left;">
+                <h4>Scott International Rich Cotton Hooded Sweatpant)</h4>
+                <p>
+                <h4>Material Composition:</h4>
+                </p>
+                <p>
+                <h4>PRODUCT DETAILS</h4>
+                </p>
+                <p><b>Material Composition:</b> Cotton</p>
+                <p><b>Style:</b> Regular</p>
+                <p><b>Neck Style:</b> Hooded Neck</p>
+                <p><b>Pattern:</b> Self-Design</p>
+                <p><b>Country of Origin:</b>USA</p>
+
+                <p><b>$50</b> Amount</p>
+                <input type="text" class="count1" value="100" hidden></input>
+                <input type="text" class="count2" onchange="calculate()" value="1" />
+                </p>
+                <a class="cart" href="PaymentGateWay.html">Go to Cart <i class="fa fa-shopping-cart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn01 = document.getElementById("myBtn1");
+    var btn02 = document.getElementById("myBtn2");
+    var btn03 = document.getElementById("myBtn3");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn01.onclick = function () {
+      modal.style.display = "block";
+    }
+    btn02.onclick = function () {
+      modal.style.display = "block";
+    }
+    btn03.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+
+    function calculate() {
+      var myBox1 = document.getElementById('count1').value;
+      var myBox2 = document.getElementById('count2').value;
+      var result = document.getElementById('result');
+      var myResult = count1 * count2;
+      result.innerHTML = myResult;
+
+    }
+  </script>
+</body>
+
+</html>
